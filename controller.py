@@ -8,7 +8,9 @@ import random
 # Initialize the Flask application and the model
 app = flask.Flask(__name__)
 CORS(app)
-
+@app.route("/")
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
 
 @app.route("/predict", methods=["POST"])
 def predict():
