@@ -47,4 +47,4 @@ if __name__ == "__main__":
 
     update_model_weights()
     load_model()
-    app.run()
+    app.run(host='0.0.0.0')
